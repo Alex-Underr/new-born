@@ -2,22 +2,57 @@
   padding-top: 182px;
   padding-bottom: 122px;
 
-  // background-color: #06071b;
   color: var(--white-color);
   background-color: var(--dark-background-color);
 
-  background-image: url('../images/hero/gradient@1x.png');
-  background-size: 291px;
-  background-position: top 132px left 52px;
+  // background-image: url('../images/hero/gradient@1x.png');
+  // background-size: 291px;
+  // background-position: top 132px left 52px;
   background-repeat: no-repeat;
-  overflow: auto;
+
+  // Mobile screen
+  background-size: 320px;
+  background-position: top 0 right 0;
+  background-image: url(../images/hero/main_mob@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/main_mob@2x.png);
+  }
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    background-size: 362px;
+    background-position: bottom 0 right 207px;  
+    background-image: url(../images/hero/icons_tab@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/icons_tab@2x.png);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1280px) {
+    background-size: 541px;
+    background-position: bottom 39 right 400px;  
+    background-image: url(../images/hero/icons_desk@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/icons_desk@2x.png);
+    }
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 142px;
     padding-bottom: 143px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 243px;
     padding-bottom: 146px;
   }
@@ -44,12 +79,9 @@
   @media screen and (max-width: 375px) {
     max-width: 241px;
   }
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
-  }
-
-  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -69,7 +101,6 @@
 .hero__item {
   position: relative;
   margin-left: 22px;
-
 
   &:not(:last-of-type) {
     margin-bottom: 16px;
@@ -101,3 +132,23 @@
   }
 }
 
+.hero__container {
+  position: relative;
+}
+
+.hero__thumb {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: absolute;
+  z-index: 20;
+  top: -5px;
+  right: -5px;
+  width: 425px;
+
+  @media screen and (min-width: 1280px) {
+    top: -127px;
+    right: 20px;
+    width: 560px;
+  }
+}
