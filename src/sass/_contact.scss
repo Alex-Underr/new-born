@@ -1,0 +1,127 @@
+.contact {
+  background-color: var(--dark-background-color);
+}
+.contact-title {
+  color: #fff;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 74px;
+    margin-bottom: 38px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 80px auto;
+  }
+}
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+  @media screen and (min-width: 768px) {
+  }
+}
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 41px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+.сontacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+  }
+}
+.contacts__input {
+  height: 40px;
+  max-width: 280px;
+  width: 100%;
+  padding: 12px 8px;
+  outline: transparent;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: border-color;
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 288px;
+  }
+
+  // &:invalid:focus {
+  //   background-color: red;
+  // }
+}
+.contacts__comment {
+  // padding: 12px 8px;
+  height: 220px;
+  max-width: 336px;
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+  }
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #939eac;
+  }
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+}
+
+.icon-regular {
+  transition: 400ms;
+
+  .socials__link:hover .socials__link-icon & {
+    opacity: 0;
+  }
+}
+
+.icon-hovered {
+  opacity: 0;
+  transition: 400ms;
+
+  .socials__link:hover .socials__link-icon & {
+    opacity: 1;
+  }
+}

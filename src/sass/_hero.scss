@@ -1,0 +1,103 @@
+.hero {
+  padding-top: 182px;
+  padding-bottom: 122px;
+
+  // background-color: #06071b;
+  color: var(--white-color);
+  background-color: var(--dark-background-color);
+
+  background-image: url('../images/hero/gradient@1x.png');
+  background-size: 291px;
+  background-position: top 132px left 52px;
+  background-repeat: no-repeat;
+  overflow: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 142px;
+    padding-bottom: 143px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 243px;
+    padding-bottom: 146px;
+  }
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.hero__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 241px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.hero__list {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.hero__item {
+  position: relative;
+  margin-left: 22px;
+
+
+  &:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -22;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/hero/icon-arrow.svg);
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.hero__btn {
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
