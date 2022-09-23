@@ -2,12 +2,17 @@
   <h2 class="team__title">OUR TEAM</h2>
   <ul>
     <li class="team__members">
-      <!-- <source
-    media="(min-width: 248px)"
-    srcset="./images/ 1x, ./images/ 2x"
-    type="image/jpg"
-    alt="Jon Doe"
-  /> -->
+      <picture>
+        <source
+          media="(min-width: 248px)"
+          srcset="
+            ./images/team/team_sm1.png    1x,
+            ./images/team/team_sm2@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img src="./images/team/team_sm1.png" alt="" loading="lazy" />
+      </picture>
       <h3>Jon Doe</h3>
       <p>Managing Direcor</p>
     </li>
