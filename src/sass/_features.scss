@@ -9,7 +9,9 @@
     background-repeat: no-repeat;
     background-position: 50% 40px;
     @media screen and (min-width: 768px) {
-        
+        background-image: url("../images/features/group_tab.png");
+        background-size: 368px 592px;
+        background-position: left 0;
     }
 }
 .feature__padding{
@@ -33,6 +35,7 @@
         max-height: 800px;
         align-items: flex-start;
         flex-wrap: wrap;
+        gap:80px 90px;
     }
 }
 .features__item-container{
@@ -62,4 +65,7 @@
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+}
+.rr{
+    margin-top: 672px;
 }
