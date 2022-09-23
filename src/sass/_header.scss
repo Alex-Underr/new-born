@@ -79,22 +79,31 @@ color: var(--white-color);
         background-color: var(--dark-background-color);
         background-repeat: no-repeat;
         background-position:0 100% ;
-        background-image: url(../images/bg-mobile.png);
+        background-image: url(../images/menu/bg-mobile.png);
         background-size: 100% ;
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image:url(..//images/bg-mobile@2x.png);}
+                background-image:url(../images/menu/bg-mobile@2x.png);}
       
       
+        @media screen and (min-width:481px) {
+            background-image: url(../images/menu/img.bg-l.png);
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/menu/img.bg-l@2x.png);
+                    }
+        }
+    
     
         transform: translateX(100%) translateY(-100%);
         transition: transform 250ms;
         &.is-open {
             transform: translate(0);
         }
-    }
+}
 
 .menu__btn{
     background-color: transparent;
@@ -121,6 +130,10 @@ color: var(--white-color);
     gap: 16px;
     align-items: center;
     margin-top: 100px;
+    @media screen and (min-width:481px) {
+        margin-top: 140px;
+        gap: 44px;
+}
 }
 
 
@@ -129,6 +142,11 @@ color: var(--white-color);
     font-weight: 500;
     font-size: 32px;
     line-height: 1.22;
+
+    @media screen and (min-width:481px) {
+        font-size: 48px;
+        line-height: 1.21;
+        }
     
     &:active{
         background-image: var(--gradient--background);
