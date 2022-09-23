@@ -80,7 +80,7 @@ color: var(--white-color);
       
     
         transform: translateX(100%) translateY(-100%);
-    
+        transition: transform 250ms;
         &.is-open {
             transform: translate(0);
         }
@@ -89,8 +89,42 @@ color: var(--white-color);
 .menu__btn{
     background-color: transparent;
     border: none;
+
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.menu__logo{
+    position: absolute;
+    top: 16px;
+    left: 20px;
 }
 
 .menu-container.container {
     max-width: 100%;
 }
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.menu__link{
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.22;
+    
+    &:active{
+        background-image: var(--gradient--background);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+    }
+
+
