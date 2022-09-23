@@ -1,3 +1,106 @@
-.team{
-    
+.team {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__member {
+    max-width: 284px;
+    border-radius: 15px;
+  }
+
+  &__person {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--white-color);
+    padding-top: 24px;
+  }
+  &__position {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: var(--white-color);
+    padding: 12 0;
+  }
+
+  &__depiction {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    max-width: 280px;
+    @media screen and (min-width: 768px) {
+      max-width: 704px;
+      padding-top: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 886px;
+      padding: 80 0;
+    }
+  }
+  &__picture{
+    display: block;
+    width: 280px;
+padding: 16 16 0 16;
+  }
+}
+
+.member-one {
+  background: linear-gradient(
+      313.81deg,
+      rgba(0, 197, 235, 0.5) -7.83%,
+      rgba(181, 68, 254, 0.5) 83.61%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+}
+.member-two {
+  background: linear-gradient(
+      105.09deg,
+      rgba(0, 197, 235, 0.5) -13.66%,
+      rgba(181, 68, 254, 0.5) 104.34%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+}
+
+.member-three {
+  background: linear-gradient(
+      105.09deg,
+      rgba(0, 197, 235, 0.5) -13.66%,
+      rgba(181, 68, 254, 0.5) 104.34%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+}
+
+.member-four {
+  background: linear-gradient(
+      313.81deg,
+      rgba(0, 197, 235, 0.5) -7.83%,
+      rgba(181, 68, 254, 0.5) 83.61%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+}
+
+.team__members {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
