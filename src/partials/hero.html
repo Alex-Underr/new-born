@@ -1,5 +1,5 @@
 <section class="hero" id="hero">
-  <div class="container">
+  <div class="hero__container container">
     <h1 class="hero__title">Introducing Mobileapp</h1>
     <h2 class="hero__subtitle">Maecenas vitae tellus sapien. Prasent</h2>
     <ul class="hero__list">
@@ -7,6 +7,36 @@
       <li class="hero__item">Integer ut mattis nulla, eget vehicula elit</li>
       <li class="hero__item">Prasent rutrum ac nunc et</li>
     </ul>
-    <button class="hero__btn btn" type="button"><span class="btn__txt">Download</span></button>
+    <button class="hero__btn btn" type="button" data-modal-open>
+      <span class="btn__txt">Download</span>
+    </button>
+    <div class="hero__thumb">
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/main_desk@1x.png 1x,
+            ./images/hero/main_desk@2x.png 2x
+          "
+          type="image/png"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+          ./images/hero/main_tab@1x.png 1x,
+          ./images/hero/main_tab@2x.png 2x
+        "
+          type="image/png"
+        />
+        <img
+          src="./images/hero/main_tab@1x.png"
+          alt="iPhone"
+          width="560"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>
