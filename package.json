@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Alex-Underr.github.io/NewBorn/",
+  "homepage": "https://Alex-Underr.github.io/new-born/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Newborn/"
+    "build": "parcel build src/*.html --public-url /new-born/"
   },
   "repository": {
     "type": "git",
