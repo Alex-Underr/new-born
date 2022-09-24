@@ -2,6 +2,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   &__title {
     font-weight: 700;
     font-size: 20px;
@@ -11,8 +15,15 @@
   }
 
   &__member {
-    max-width: 284px;
+    width: 284px;
     border-radius: 15px;
+
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 288px;
+    }
   }
 
   &__person {
@@ -51,10 +62,37 @@
       padding: 80 0;
     }
   }
-  &__picture{
+  &__picture {
     display: block;
-    width: 280px;
-padding: 16 16 0 16;
+    max-width: 280px;
+    width: 100%;
+
+    padding-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      max-width: 296px;
+      padding-top: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 264px;
+      padding-top: 14px;
+    }
+  }
+
+  &__members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    @media screen and (min-width: 768px) {
+      gap: 40px 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      flex-wrap: nowrap;
+      gap: 32px;
+    }
   }
 }
 
@@ -76,7 +114,6 @@ padding: 16 16 0 16;
     #06071b;
   backdrop-filter: blur(17.5px);
 }
-
 .member-three {
   background: linear-gradient(
       105.09deg,
@@ -86,7 +123,6 @@ padding: 16 16 0 16;
     #06071b;
   backdrop-filter: blur(17.5px);
 }
-
 .member-four {
   background: linear-gradient(
       313.81deg,
@@ -97,10 +133,42 @@ padding: 16 16 0 16;
   backdrop-filter: blur(17.5px);
 }
 
-.team__members {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
+.team-bg {
+  width: 100%;
+  background-position: 50% -185px, 50% 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../images/team/teambg_sm1.png'),
+    url('../images/team/teambg_sm2.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/team/teambg_sm1@2x.png'),
+      url('../images/team/teambg_sm2@2x.png');
+  }
+   @media screen and (min-width: 768px) {
+    background-position: 68% 52px, 20% -83px;;
+    background-image:url('../images/team/teambg_md1.png'),
+      url('../images/team/teambg_md2.png');
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/team/teambg_md1@2x.png'),
+      url('../images/team/teambg_md2@2x.png');
+  }
+   }
+    @media screen and (min-width: 1280px) {
+      background-position: 68% -364px, 20% -83px;
+      background-image:url('../images/team/teambg_lg1.png'),
+      url('../images/team/teambg_lg2.png');
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/team/teambg_lg1@2x.png'),
+      url('../images/team/teambg_lg2@2x.png');
+  }
+   }
 }
