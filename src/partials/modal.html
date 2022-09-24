@@ -1,10 +1,15 @@
-<!-- <h2 class="modal__title">Download</h2>
-<svg width="24" height="24" class="modal__close">
-  <use href="./images/icons.svg#icon-menu-close"></use>
-</svg>
-<ul class="modal__list">
-  <li class="modal__item">
-    <a href="#" class="modal__link" download="plan">
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-btn" data-modal-close>
+      <svg width="24" height="24" class="modal__close">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <form class="download__items">
+          <strong class="modal__title">Download</strong>
+          <div class="form-group" role="group">
+        <ul class="modal__list">
+  <li class="modal__item"><input type="checkbox" class="download__chekcbox"/>
       <svg width="80" height="106">
         <use href="./images/icons.svg#icon-file-download"></use>
       </svg>
@@ -15,8 +20,7 @@
       </ul>
     </a>
   </li>
-  <li class="modal__item">
-    <a href="#" class="modal__link" download="plan">
+  <li class="modal__item"><input type="checkbox" class="download__chekcbox"/>
       <svg width="80" height="106">
         <use href="./images/icons.svg#icon-file-download"></use>
       </svg>
@@ -29,11 +33,11 @@
     </a>
   </li>
 </ul>
-<p class="modal__text">
+          </div>
+        <p class="modal__text">
   Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque.
   In sit amet lectus non lacus
 </p>
-
 <div class="modal__wrapper">
   <ul class="downloads__list">
     <li class="downloads__item">
@@ -111,4 +115,7 @@
       </div>
     </li>
   </ul>
-</div> -->
+</div>
+ <button class=" btn btn--modal" type="button"><a href="" download="plan" class="link--download"> Download</a></button>
+  </div>
+</div>
