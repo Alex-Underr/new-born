@@ -81,12 +81,18 @@
 
 .download__chekcbox{
     opacity: 0;
-    transform: scale(0);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-    &:checked + .modal__item{
-        background-image: var(--gradient--background);
+    &:focus-within  .modal__item{
+        background-image:  linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
     }
 }
+
+
 
 .modal__list{
     display: flex;
@@ -100,11 +106,13 @@
 
 
 .modal__item{
+    padding-top: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     max-width: 233px;
+    position: relative;
 
     border: 2px solid ;
     border-image-slice: 1;
@@ -127,7 +135,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    // padding: 28px 25px 28px 20px;
+    padding: 0 25px 28px 20px;
 }
 
 .list__item{
@@ -143,4 +151,109 @@
             height: 14px;
             background-image: url(../images/hero/icon-right-arrow.svg);
         }
+}
+
+.download__items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__text{
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.modal__wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid;
+    max-width: 232px;
+    @media screen and (min-width:768px) {
+            min-width: 488px;
+        }
+        border-image-slice: 1;
+        border-width: 2px;
+        border-radius: 6px;
+        border-image-source: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+}
+
+.downloads__list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    
+    @media screen and (min-width:768px) {
+        flex-basis: 50%;
+        gap: 20px;
+       
+        }
+
+    &:not(:last-child)::after {
+
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100%;
+    height: 2px;
+   
+    background-color: transparent;
+    background-image: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    @media screen and (min-width:768px) {
+            width: 2px;
+            height: 100%;
+            top: 0;
+            right: 50%;
+        }
+    }
+   
+}
+
+.downloads__item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.download__title{
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.download__link{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #1AB9FD;
+}
+
+.btn--modal{
+    margin-top: 20px;
+    @media screen and (min-width:768px) {
+    margin-top: 32px;
+    }
+}
+
+.btn__link{
+    color: var(--white-color);
+    position: relative;
+    z-index: 100;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
 }
