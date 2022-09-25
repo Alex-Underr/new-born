@@ -1,14 +1,5 @@
-.features{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    
-}
-.features__container-color{
-    @media screen and(min-width:1200px){
-        max-width: 1200px;
-    }  
-}
 .features__gradient{
+    padding-top: 100px;
     padding-bottom: 105px;
     background-image: url("../images/features/vector-top_mob.png"), url("../images/features/vector_mob.png");
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
@@ -20,13 +11,13 @@
     @media screen and(min-width:768px){
         background: none;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:1280px){
         background-image: url("../images/features/vector-top_dec.png"), url("../images/features/vector_dec.png");
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/features/vector-top_dec@2x.png"),url("../images/features/vector_dec@2x.png");
         }
-        background-size: 404px 253px, 1200px 823.76px;
-        background-position: right 0, left bottom -200px ;
+        background-size: 604px 453px, 1280px 823.76px;
+        background-position: right 70px, left bottom -100px ;
         background-repeat: no-repeat;
     }
 }
@@ -46,7 +37,7 @@
         background-size: 368px 592px;
         background-position: left 0;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         background-image: url("../images/features/group_dec.png");
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/features/group_dec@2x.png");
@@ -74,7 +65,7 @@
     font-size: 16px;
     line-height: 1.5;
     margin: 40px auto;
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         max-width: 886px;
         margin: 80px auto;
     }
@@ -90,7 +81,7 @@
         flex-wrap: wrap;
         gap: 80px ;
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         max-height: 600px;
         gap:80px 452px;
         padding: 60px 0;
@@ -106,7 +97,7 @@
     @media screen and (min-width: 768px) {
         width: 278px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         width: 260px;
     }
 }
@@ -126,7 +117,7 @@
     @media screen and (min-width:768px){
         margin-top: 672px;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:1280px){
         margin-top: 0;
     }
     
