@@ -9,6 +9,7 @@
     }  
 }
 .features__gradient{
+    padding-bottom: 105px;
     background-image: url("../images/features/vector-top_mob.png"), url("../images/features/vector_mob.png");
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
         background-image: url("../images/features/vector-top_mob@2x.png"),url("../images/features/vector_mob@2x.png");
