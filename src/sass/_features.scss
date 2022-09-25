@@ -5,7 +5,6 @@
 }
 .features__container-color{
     @media screen and(min-width:1200px){
-        position: relative;
         max-width: 1200px;
     }  
 }
@@ -63,10 +62,9 @@
 }
 .features__main-title{
     text-align: center;
-    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
-    color: #000000;
+    color: var(--black-color);
     margin-bottom: 40px;
 }
 .features__main-text{
@@ -112,17 +110,16 @@
     }
 }
 .features__item-title{
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
-    color: #000000;
+    color:  var(--black-color);
 }
 .features__item-text{
     margin-left: 40px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
-    color: #000000;
+    color:  var(--black-color);
 }
 .features__tablet{
     @media screen and (min-width:768px){
