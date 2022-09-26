@@ -3,9 +3,9 @@
     <h2 class="contacts__title">Contact us</h2>
    <div class="contacts__wrapper container">
     <form class="form">
-        <input class="form__input name" type="text" name="user-name" id="name" placeholder="Name"  required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" />
+        <input class="form__input name" type="text" name="user-name" id="name" placeholder="Name" pattern="^[A-Za-z\s]{3,33}" />
     
-        <input class="form__input mail" type="email" name="mail" required placeholder="Email" />
+        <input class="form__input mail" type="email" name="mail"  placeholder="Email" pattern="^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$" />
     
         <textarea class="form__comment" name="comment" rows="7" placeholder="Message"></textarea>
     
