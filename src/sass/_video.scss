@@ -1,15 +1,63 @@
 .video {
+  margin: 0 auto;
+  max-width: 480px;
   padding-top: 40px;
-padding-bottom: 40px;
+  padding-bottom: 40px;
   color: var(--white-color);
   background-color: var(--dark-background-color);
   text-align: center;
 
+  // Mobile screen
+  background-position: bottom -10px center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/video/gradient-1_mob@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/video/gradient-1_mob@2x.png);
+  }
+
+  // Tablet screen
   @media screen and (min-width: 768px) {
+    background-position: top 0px left 0px, bottom -95px center;
+    background-size: 390px, 611px;
+    background-image: url(../images/video/gradient-1_tab@1x.png),
+      url(../images/video/gradient-2_tab@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/video/gradient-1_tab@2x.png),
+        url(../images/video/gradient-2_tab@2x.png);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1280px) {
+    background-position: top 60px left 150px, bottom -70px right 50px;
+    background-size: 414px, 678px;
+    background-image: url(../images/video/gradient-1_tab@1x.png),
+      url(../images/video/gradient-2_tab@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/video/gradient-1_tab@2x.png),
+        url(../images/video/gradient-2_tab@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    max-width: 768px;
     padding-top: 80px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+    max-width: 1280px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -67,9 +115,16 @@ padding-bottom: 40px;
 }
 
 .video__thumb {
+  margin-top: 106px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 49px;
   max-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 1280px) {
     margin: 0;
