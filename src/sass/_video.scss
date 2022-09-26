@@ -114,6 +114,20 @@
   }
 }
 
+.video__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+}
+
+.video__icon {
+  fill: var(--white-color);
+}
+
 .video__thumb {
   margin-top: 106px;
   margin-right: auto;
