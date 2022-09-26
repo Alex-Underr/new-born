@@ -118,6 +118,10 @@
     position: relative;
     flex-grow: 1;
     
+    &:hover{
+            background-image: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        }
+
     &:focus-within  {
             background-image: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
         }
@@ -289,11 +293,14 @@
     margin-top: 20px;
     @media screen and (min-width:768px) {
     margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     }
 }
 
 .btn__link{
-    color: var(--white-color);
     position: relative;
     z-index: 100;
     color: var(--white-color);
