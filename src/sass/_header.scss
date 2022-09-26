@@ -4,16 +4,25 @@
     display: flex;
     background-color: var(--dark-background-color);
     background-image: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+    max-width: 480px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
         position: fixed;
         top: 20px;
+        left: 0;
         right: 0;
         z-index: 1000;
+
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+    }
        
     @media screen and (min-width: 1280px){
         padding-top: 19px;
         padding-bottom: 19px;
         top: 26px;
+        max-width: 1280px;
     }
 }
 //logo
