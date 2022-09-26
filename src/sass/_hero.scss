@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   max-width: 480px;
   padding-top: 182px;
@@ -7,45 +9,30 @@
   color: var(--white-color);
   background-color: var(--dark-background-color);
 
-  // background-image: url('../images/hero/gradient@1x.png');
-  // background-size: 291px;
-  // background-position: top 132px left 52px;
-  background-repeat: no-repeat;
-
-  // Mobile screen
-  background-size: 320px;
-  background-position: top 0 right 0;
-  background-image: url(../images/hero/main_mob@1x.png);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/main_mob@2x.png);
-  }
-
   // Tablet screen
   @media screen and (min-width: 768px) {
-    background-size: 362px;
-    background-position: bottom 0 right 207px;  
-    background-image: url(../images/hero/icons_tab@1x.png);
+    background-repeat: no-repeat;
+    background-size: 426px, 362px;
+    background-position: top 100px left, bottom 0 right 207px;  
+    background-image: url(../images/hero/gradient-1_tab@1x.png), url(../images/hero/icons_tab@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/icons_tab@2x.png);
+      background-image: url(../images/hero/gradient-1_tab@2x.png), url(../images/hero/icons_tab@2x.png);
     }
   }
 
   // Desktop screen
   @media screen and (min-width: 1280px) {
-    background-size: 541px;
-    background-position: bottom 39 right 400px;  
-    background-image: url(../images/hero/icons_desk@1x.png);
+    background-size: 446px, 541px;
+    background-position: top 170px left, bottom 39 right 400px;  
+    background-image: url(../images/hero/gradient-1_desk@1x.png), url(../images/hero/icons_desk@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/icons_desk@2x.png);
+      background-image: url(../images/hero/gradient-1_desk@2x.png), url(../images/hero/icons_desk@2x.png);
     }
   }
 
@@ -144,14 +131,19 @@
 }
 
 .hero__thumb {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
   position: absolute;
-  z-index: 20;
+  z-index: -1;
+  bottom: -230px;
+  right: 0px;
+  width: 320px;
+  
+  @media screen and (min-width: 768px) {
+  // display: none;
+  // position: absolute;
   top: -5px;
   right: -5px;
   width: 425px;
+}
 
   @media screen and (min-width: 1280px) {
     top: -127px;
