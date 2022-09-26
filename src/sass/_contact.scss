@@ -1,6 +1,54 @@
 .contact {
   background-color: var(--dark-background-color);
-  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    background-size: 246px, 398px;
+    background-repeat: no-repeat;
+    background-image: url(../images/contacts/mobile@1x.png),
+      url(../images/contacts/mobile_1@1x.png);
+    background-position: 41px 651px, bottom 200px right -8px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/contacts/mobile@2x.png),
+      url(../images/contacts/mobile_1@2x.png);
+  }
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+
+    background-repeat: no-repeat;
+    background-size: 880px, 291px;
+    background-position: top -311px left -112px, bottom 203px right 246px;
+    background-image: url(../images/contacts/table@1x.png),
+      url(../images/contacts/table_1@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/table@2x.png),
+        url(../images/contacts/table_1@2x.png);
+    }
+  }
+  // Desktop screen
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+
+    background-size: 291px, 712px;
+    background-position: top 32px left 49px, bottom -21px right 68px;
+    background-image: url(../images/contacts/desk@1x.png),
+      url(../images/contacts/desk_1@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/desk@2x.png),
+        url(../images/contacts/desk_1@2x.png);
+    }
+  }
 }
 .contacts__title {
   padding-top: 40px;
@@ -71,10 +119,10 @@
   }
 
   &:valid {
-    border: 2px solid black;
+    border: none;
   }
   &:invalid {
-    border: 4px solid red;
+    border: 1px solid red;
   }
 }
 .form__comment {
@@ -82,11 +130,10 @@
   max-width: 440px;
   width: 100%;
   border-radius: 5px;
-  outline: transparent;
   padding: 12px 8px;
   resize: none;
   overflow: hidden;
-  border: none;
+
   @media screen and (min-width: 768px) {
     max-width: 704px;
     max-height: 162px;

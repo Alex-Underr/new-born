@@ -1,6 +1,15 @@
 .footer {
   background-color: #06071b;
   border-top: 1px solid #fff;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and(min-width:768px) {
+    max-width: 768px;
+  }
+  @media screen and(min-width:1280px) {
+    max-width: 1280px;
+  }
 }
 .copyright {
   padding-top: 22px;
