@@ -5,8 +5,8 @@
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
         background-image: url("../images/features/vector-top_mob@2x.png"),url("../images/features/vector_mob@2x.png");
     }
-    background-size: 668px 567px, 627.76px 600.57px;
-    background-position: top -100px left 50%, bottom left 50%;
+    background-size: 480px;
+    background-position: top -200px right 50% , bottom -200px left 50% ;
     background-repeat: no-repeat;
     @media screen and(min-width:768px){
         background: none;
@@ -16,8 +16,7 @@
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/features/vector-top_dec@2x.png"),url("../images/features/vector_dec@2x.png");
         }
-        background-size: 604px 453px, 1280px 823.76px;
-        background-position: right 70px, left bottom -100px ;
+        background-position: right top -150px, left top;
         background-repeat: no-repeat;
     }
 }
@@ -89,8 +88,22 @@
 }
 .features__item-container{
     display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-right: auto;
     gap: 13px;
     margin-bottom: 9px;
+}
+.features__item-container::after{
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/features/gear.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
+        background-image: url("../images/features/gear@2x.png");
+    }
 }
 .features__item{
     width: 260px;
@@ -102,6 +115,7 @@
     }
 }
 .features__item-title{
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     color:  var(--black-color);
