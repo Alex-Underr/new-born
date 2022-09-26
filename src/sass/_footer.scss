@@ -1,12 +1,21 @@
 .footer {
   background-color: #06071b;
+  border-top: 1px solid #fff;
 }
 .copyright {
-  padding: 22px 83px 22px 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  max-width: 193px;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   text-align: left;
   color: #ffffff;
-  border-top: 1px solid #ffffff;
+  @media screen and(min-width:768px) {
+    padding-bottom: 28px;
+    max-width: 500px;
+  }
+  @media screen and(min-width:768px) {
+    padding-bottom: 21px;
+  }
 }
