@@ -20,7 +20,7 @@
     margin-bottom: 80px;
   }
 }
-.contacts-wrapper {
+.contacts__wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -34,7 +34,7 @@
     padding-bottom: 79px;
   }
 }
-.contacts {
+.form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,14 +47,14 @@
     margin-bottom: 0;
   }
 }
-.contacts ::placeholder {
+.form ::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
   color: #939eac;
 }
 
-.contacts__input {
+.form__input {
   height: 40px;
   width: 100%;
   max-width: 440px;
@@ -70,15 +70,12 @@
     width: 288px;
   }
 }
-.contacts__input.name:focus:invalid {
-  border-color: red;
+.form__input:focus:invalid {
+  background-color: red;
 }
-.contacts__input.email:focus:invalid {
-  border-color: red;
-}
-.contacts__comment {
+.form__comment {
   height: 220px;
-  min-width: 280px;
+  max-width: 440px;
   width: 100%;
   border-radius: 5px;
   padding: 12px 8px;
@@ -100,7 +97,7 @@
     margin-right: 0;
   }
 }
-.feedback {
+.socials__wrapper {
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
@@ -109,7 +106,7 @@
     margin-right: 140px;
   }
 }
-.feedback-title {
+.socials__wrapper-title {
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -125,7 +122,7 @@
     text-align: left;
   }
 }
-.feedback-text {
+.socials__wrapper-text {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.21;
@@ -143,7 +140,7 @@
     margin-bottom: 21px;
   }
 }
-.social__list {
+.socials__list {
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -152,7 +149,7 @@
     margin-bottom: 21px;
   }
 }
-.social__link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,7 +163,7 @@
 .icon-regular {
   transition: 400ms;
 
-  .social__link:hover .social__link-icon & {
+  .socials__link:hover .socials__link-icon & {
     opacity: 0;
   }
 }
@@ -174,22 +171,22 @@
   opacity: 0;
   transition: 400ms;
 
-  .social__link:hover .social__link-icon & {
+  .socials__link:hover .socials__link-icon & {
     opacity: 1;
   }
 }
-.socials__list {
+.contacts__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.socials__tel {
+.contacts__tel {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   color: var(--white-color);
 }
-.socials__mail {
+.contacts__mail {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
