@@ -8,7 +8,7 @@
   text-align: center;
 
   // Mobile screen
-  background-position: bottom -10px center;
+  background-position: bottom -10px right 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../images/video/gradient-1_mob@1x.png);
@@ -21,7 +21,7 @@
 
   // Tablet screen
   @media screen and (min-width: 768px) {
-    background-position: top 0px left 0px, bottom -95px center;
+    background-position: top 0px left 0px, bottom -95px right 50%;
     background-size: 390px, 611px;
     background-image: url(../images/video/gradient-1_tab@1x.png),
       url(../images/video/gradient-2_tab@1x.png);
