@@ -1,65 +1,67 @@
-<section class="video">
-  <div class="video__container container">
-    <div class="video__wrap">
-      <h2 class="video__title">WATCH THE VIDEO</h2>
-      <p class="video__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
-        at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
-        hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
-      </p>
-      <ul class="video__list">
-        <li class="video_item">
-          <a
-            href="https://www.apple.com/ua/app-store/"
-            class="video__link"
-            target="_blank"
-          >
-            <svg class="video__icon" width="60" height="60">
-              <use href="./images/icons.svg#icon-apple"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="video_item">
-          <a
-            href="https://play.google.com/"
-            class="video__link"
-            target="_blank"
-          >
-            <svg class="video__icon" width="60" height="60">
-              <use href="./images/icons.svg#icon-android"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+<div class="video__background">
+  <section class="video">
+    <div class="video__container container">
+      <div class="video__wrap">
+        <h2 class="video__title">WATCH THE VIDEO</h2>
+        <p class="video__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
+          at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
+          hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+        </p>
+        <ul class="video__list">
+          <li class="video_item">
+            <a
+              href="https://www.apple.com/ua/app-store/"
+              class="video__link"
+              target="_blank"
+            >
+              <svg class="video__icon" width="60" height="60">
+                <use href="./images/icons.svg#icon-apple"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="video_item">
+            <a
+              href="https://play.google.com/"
+              class="video__link"
+              target="_blank"
+            >
+              <svg class="video__icon" width="60" height="60">
+                <use href="./images/icons.svg#icon-android"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="video__thumb">
+          <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/video/main_desk@1x.png 1x,
+                ./images/video/main_desk@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/video/main_tab@1x.png 1x,
+                ./images/video/main_tab@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./images/video/main_desk@1x.png"
+              alt="iPhone"
+              width="501"
+              loading="lazy"
+            />
+          </picture>
+        </div>    
     </div>
-    <div class="video__thumb">
-        <picture>
-          <!-- Desktop screen -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./images/video/main_desk@1x.png 1x,
-              ./images/video/main_desk@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- Tablet screen -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/video/main_tab@1x.png 1x,
-              ./images/video/main_tab@2x.png 2x
-            "
-            type="image/png"
-          />
-          <img
-            src="./images/video/main_desk@1x.png"
-            alt="iPhone"
-            width="501"
-            loading="lazy"
-          />
-        </picture>
-      </div>    
-  </div>
-</section>
+  </section>
+</div>

@@ -1,10 +1,15 @@
+.video__background {
+  width: 100%;
+  background-color: var(--dark-background-color);
+}
+
 .video {
   margin: 0 auto;
   max-width: 480px;
   padding-top: 40px;
   padding-bottom: 40px;
   color: var(--white-color);
-  background-color: var(--dark-background-color);
+  // background-color: var(--dark-background-color);
   text-align: center;
 
   // Mobile screen
