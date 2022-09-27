@@ -1,6 +1,5 @@
 .header{
-    padding-top: 14px;
-    padding-bottom: 14px;
+
     display: flex;
     background-color: var(--dark-background-color);
     background-image: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
@@ -17,10 +16,14 @@
     // @media screen and (min-width: 768px){
     //     max-width: 768px;
     // }
+         @media screen and (max-width: 767px) {
+            padding-top: 14px;
+            padding-bottom: 14px;
+         }
+
        
     @media screen and (min-width: 1280px){
-        padding-top: 19px;
-        padding-bottom: 19px;
+       
         top: 26px;
         // max-width: 1280px;
     }
@@ -55,9 +58,17 @@ color: var(--white-color);
 }
 
 .nav__link{
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--white-color);
     font-size: 12px;
     line-height: 1.25;
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 29px;
+        padding-bottom: 29px; 
+    }
     &:hover,
     &:focus{
         background-image: var(--gradient--background);
