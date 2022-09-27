@@ -1,7 +1,7 @@
 .team {
  
  @media screen and (max-width: 767px) {
-     margin-top: 40px;
+     padding-top: 40px;
   }
   @media screen and (min-width: 768px) {
     padding-top: 80px;
@@ -36,7 +36,7 @@
     font-size: 18px;
     line-height: 1.22;
     color: var(--white-color);
-    padding-top: 24px;
+    padding-top: 20px;
   }
   &__position {
     
@@ -143,7 +143,7 @@
 
 .team-bg {
   width: 100%;
-  background-position: 50% -570px, 60% 673px;
+  background-position: 50% -422px, 60% 210px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -158,7 +158,7 @@
       url('../images/team/teambg_sm2@2x.png');
   }
    @media screen and (min-width: 768px) {
-    background-position: 68% -337px, 20% 379px;
+    background-position: 50% -381px, 50% 449px;
     background-image:url('../images/team/teambg_md1.png'),
       url('../images/team/teambg_md2.png');
 @media (min-device-pixel-ratio: 2),
@@ -169,7 +169,7 @@
   }
    }
     @media screen and (min-width: 1280px) {
-      background-position: 50% 20%, 50% 40%;;
+      background-position: 11px, -1230px, 176px, -237px;
       background-image:url('../images/team/teambg_lg1.png'),
       url('../images/team/teambg_lg2.png');
 @media (min-device-pixel-ratio: 2),
