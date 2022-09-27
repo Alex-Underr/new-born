@@ -8,7 +8,7 @@
     color: var(--black-color);
     background-image: url("../images/testimonials/vector-top_mob.png"), url("../images/testimonials/vector_mob.png");
     background-repeat: no-repeat;
-    background-position: bottom, top;
+    background-position: 90% -79px, 60% -59px;
     background-size: cover;
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
         background-image: url("../images/testimonials/vector-top_mob@2x.png"), url("../images/testimonials/vector_mob@2x.png");
@@ -18,7 +18,7 @@
         padding-bottom: 60px;
         background-image: url("../images/testimonials/vector_tab.png"),url("../images/testimonials/vector-left_tab.png"),url("../images/testimonials/vector-right_tab.png");
         background-repeat: no-repeat;
-        background-position: center, left , right ;
+        background-position: 50% -503px, 50% -276px;
         background-size: cover;
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/testimonials/vector_tab@2x.png"),url("../images/testimonials/vector-left_tab@2x.png"),url("../images/testimonials/vector-right_tab@2x.png");
@@ -28,7 +28,7 @@
         padding: 80px 0;
         background-image: url("../images/testimonials/vector_dec.png"),url("../images/testimonials/vector-left_dec.png"),url("../images/testimonials/vector-right_dec.png");
         background-repeat: no-repeat;
-        background-position: center, left, right bottom;
+        background-position: -50% -1341px, 50% 54px;
         background-size: cover;
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/testimonials/vector_dec@2x.png"),url("../images/testimonials/vector-left_dec@2x.png"),url("../images/testimonials/vector-right_dec@2x.png");
