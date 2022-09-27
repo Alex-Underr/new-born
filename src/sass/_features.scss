@@ -108,16 +108,18 @@
         } 
         &:nth-child(n + 7){
            &:nth-child(odd){
-                margin-left: -433px;
+                margin-left: -342px;
                 padding-bottom: -168px;
            }
            &:nth-child(even){
                 margin-top: -168px;
+                padding-right: 90px;
            }
         } 
         &:nth-child(n + 2){
          margin-top: 0;
-         margin-left: auto;  
+         margin-left: auto; 
+         padding-right: 90px; 
         }
         &:nth-child(2){
             margin-top: -839px;
