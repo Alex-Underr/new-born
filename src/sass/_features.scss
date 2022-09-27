@@ -1,11 +1,12 @@
 .features__gradient{
+    max-width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     background-image: url("../images/features/vector-top_mob.png"), url("../images/features/vector_mob.png");
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
         background-image: url("../images/features/vector-top_mob@2x.png"),url("../images/features/vector_mob@2x.png");
     }
-    background-size: 480px;
+    background-size: cover;
     background-position: top -200px right 50% , bottom -200px left 50% ;
     background-repeat: no-repeat;
     @media screen and(min-width:768px){
@@ -32,6 +33,8 @@
     background-repeat: no-repeat;
     background-position: 50% 40px;
     @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        width: 768px;
         background-image: url("../images/features/group_tab.png");
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/features/group_tab@2x.png");
@@ -40,7 +43,7 @@
         background-position: left 0;
     }
     @media screen and (min-width: 1280px) {
-        
+        width: 971px;
         padding-top: 60px;
         padding-bottom: 60px;
         background-image: url("../images/features/group_dec.png");
@@ -66,10 +69,14 @@
 }
 .features__main-text{
     text-align: center;
+    max-width: 280px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     margin: 40px auto;
+    @media screen and (min-width:768px) {
+        max-width: 704px;
+    }
     @media screen and (min-width:1280px) {
         max-width: 886px;
         margin: 80px auto;
