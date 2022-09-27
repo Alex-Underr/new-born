@@ -5,115 +5,148 @@
         <use href="./images/icons.svg#icon-menu-close"></use>
       </svg>
     </button>
-    <form class="download__items">
-          <strong class="modal__title">Download</strong>
-          <div class="form-group" role="group">
-        <ul class="modal__list">
-  <li class="modal__item"><input type="checkbox" class="download__checkbox" name="free_plan" value="free_plan"/>
-      <svg width="80" height="106">
-        <use href="./images/icons.svg#icon-file-download"></use>
-      </svg>
-      <h3 class="list__subtitle">Download free plan</h3>
-      <ul class="list__items">
-        <li class="list__item">Donec posuere augue venenatis, aliquet</li>
-        <li class="list__item">Donec posuere augue venenatis, aliquet</li>
-      </ul>
-  </li>
-  <li class="modal__item"><input type="checkbox" class="download__checkbox" name="plan_paid" value="plan_paid"/>
-      <svg width="80" height="106">
-        <use href="./images/icons.svg#icon-file-download"></use>
-      </svg>
-      <h3 class="list__subtitle">Download for 20$</h3>
-      <ul class="list__items">
-        <li class="list__item">Donec posuere augue venenatis, aliquet</li>
-        <li class="list__item">Donec posuere augue venenatis, aliquet</li>
-        <li class="list__item">Donec posuere augue venenatis, aliquet</li>
-      </ul>
-  </li>
-</ul>
-          </div>
-        <p class="modal__text">
-  Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque.
-  In sit amet lectus non lacus
-</p>
-<div class="modal__wrapper">
-  <ul class="downloads__list">
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-app"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">App name</h4>
-        <p class="download__link">Mobileapp.layout</p>
+    <div class="download__items">
+      <form>
+        <strong class="modal__title">Download</strong>
+        <div class="form-group" role="group">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input
+                type="radio"
+                class="download__checkbox"
+                name="free_plan"
+                value="free_plan"
+                id="free_plan"
+              />
+              <div class="input__wrap">
+                <svg width="80" height="106">
+                  <use href="./images/icons.svg#icon-file-download"></use>
+                </svg>
+                <h3 class="list__subtitle">Download free plan</h3>
+                <ul class="list__items">
+                  <li class="list__item">
+                    Donec posuere augue venenatis, aliquet
+                  </li>
+                  <li class="list__item">
+                    Donec posuere augue venenatis, aliquet
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="modal__item">
+              <input
+                type="radio"
+                class="download__checkbox"
+                name="plan_paid"
+                value="plan_paid"
+                id="plan_paid"
+              />
+              <div class="input__wrap">
+                <svg width="80" height="106">
+                  <use href="./images/icons.svg#icon-file-download"></use>
+                </svg>
+                <h3 class="list__subtitle">Download for 20$</h3>
+                <ul class="list__items">
+                  <li class="list__item">
+                    Donec posuere augue venenatis, aliquet
+                  </li>
+                  <li class="list__item">
+                    Donec posuere augue venenatis, aliquet
+                  </li>
+                  <li class="list__item">
+                    Donec posuere augue venenatis, aliquet
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+      <p class="modal__text">
+        Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque
+        neque. In sit amet lectus non lacus
+      </p>
+      <div class="modal__wrapper">
+        <ul class="downloads__list">
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-app"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">App name</h4>
+              <p class="download__link">Mobileapp.layout</p>
+            </div>
+          </li>
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-license"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">License</h4>
+              <p class="download__link">Free</p>
+            </div>
+          </li>
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-author"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">Author</h4>
+              <p class="download__link">Mobile Marrket App.com</p>
+            </div>
+          </li>
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-data"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">Data</h4>
+              <p class="download__link">21.02.2022</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="downloads__list">
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-oc"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">OC</h4>
+              <p class="download__link">Windows</p>
+            </div>
+          </li>
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-language"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">Language</h4>
+              <p class="download__link">English</p>
+            </div>
+          </li>
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-size"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">Size</h4>
+              <p class="download__link">4.16 MB</p>
+            </div>
+          </li>
+          <li class="downloads__item">
+            <svg width="28" height="28" class="downloads__icon">
+              <use href="./images/icons.svg#icon-downloads"></use>
+            </svg>
+            <div class="download__wrap">
+              <h4 class="download__title">Downloads</h4>
+              <p class="download__link">964</p>
+            </div>
+          </li>
+        </ul>
       </div>
-    </li>
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-license"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">License</h4>
-        <p class="download__link">Free</p>
-      </div>
-    </li>
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-author"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">Author</h4>
-        <p class="download__link">Mobile Marrket App.com</p>
-      </div>
-    </li>
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-data"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">Data</h4>
-        <p class="download__link">21.02.2022</p>
-      </div>
-    </li>
-  </ul>
-  <ul class="downloads__list">
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-oc"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">OC</h4>
-        <p class="download__link">Windows</p>
-      </div>
-    </li>
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-language"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">Language</h4>
-        <p class="download__link">English</p>
-      </div>
-    </li>
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-size"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">Size</h4>
-        <p class="download__link">4.16 MB</p>
-      </div>
-    </li>
-    <li class="downloads__item">
-      <svg width="28" height="28" class="downloads__icon">
-        <use href="./images/icons.svg#icon-downloads"></use>
-      </svg>
-      <div class="download__wrap">
-        <h4 class="download__title">Downloads</h4>
-        <p class="download__link">964</p>
-      </div>
-    </li>
-  </ul>
-</div>
-<a href="#" download="plan" class=" btn btn--modal"> <span class="btn__link"> Download</span> </a>
+      <a href="#" download="plan" class="btn btn--modal">
+        <span class="btn__link"> Download</span>
+      </a>
+    </div>
   </div>
 </div>
