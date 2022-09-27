@@ -37,6 +37,9 @@
         background-position: left 0;
     }
     @media screen and (min-width: 1280px) {
+        
+        padding-top: 60px;
+        padding-bottom: 60px;
         background-image: url("../images/features/group_dec.png");
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/features/group_dec@2x.png");
@@ -75,15 +78,35 @@
     flex-direction: column;
     gap:24px;
     @media screen and(min-width:768px) {
-        max-height: 800px;
-        align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 80px ;
     }
     @media screen and (min-width:1280px) {
-        max-height: 600px;
-        gap:80px 452px;
-        padding: 60px 0;
+        margin: 0 auto;
+        width: 970px; 
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.features__item{
+    @media screen and (min-width:768px) and (max-width:1279.5px){
+        &:nth-child(1){
+            margin-top: 672px;
+            padding-left: 32px;
+            margin-right: auto;
+        } 
+        &:nth-child(n + 2){
+         margin-top: 0;
+         margin-left: auto;  
+        }
+        &:nth-child(2){
+            margin-top: -839px;
+        }
+        
+    }
+    @media screen and (min-width: 1280px) {
+        flex-basis: calc((100% - 429px)/ 2);
     }
 }
 .features__item-container{
@@ -105,15 +128,7 @@
         background-image: url("../images/features/gear@2x.png");
     }
 }
-.features__item{
-    width: 260px;
-    @media screen and (min-width: 768px) {
-        width: 278px;
-    }
-    @media screen and (min-width: 1280px) {
-        width: 260px;
-    }
-}
+
 .features__item-title{
     font-weight: 700;
     font-size: 16px;
@@ -127,12 +142,12 @@
     line-height: 1.21;
     color:  var(--black-color);
 }
-.features__tablet{
-    @media screen and (min-width:768px){
-        margin-top: 672px;
+.features__width-text{
+    width: 260px;
+    @media screen and (min-width: 768px) {
+        width: 278px;
     }
-    @media screen and (min-width:1280px){
-        margin-top: 0;
+    @media screen and (min-width: 1280px) {
+        width: 260px;
     }
-    
 }
