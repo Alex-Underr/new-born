@@ -1,6 +1,6 @@
 .features__gradient{
-    padding-top: 100px;
-    padding-bottom: 105px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-image: url("../images/features/vector-top_mob.png"), url("../images/features/vector_mob.png");
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
         background-image: url("../images/features/vector-top_mob@2x.png"),url("../images/features/vector_mob@2x.png");
@@ -10,8 +10,11 @@
     background-repeat: no-repeat;
     @media screen and(min-width:768px){
         background: none;
+        padding-top: 100px;
+        padding-bottom: 80px;
     }
     @media screen and (min-width:1280px){
+        padding-bottom: 105px;
         background-image: url("../images/features/vector-top_dec.png"), url("../images/features/vector_dec.png");
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/features/vector-top_dec@2x.png"),url("../images/features/vector_dec@2x.png");
@@ -95,6 +98,15 @@
             margin-top: 672px;
             padding-left: 32px;
             margin-right: auto;
+        } 
+        &:nth-child(n + 7){
+           &:nth-child(odd){
+                margin-left: -373px;
+                padding-bottom: -168px;
+           }
+           &:nth-child(even){
+                margin-top: -168px;
+           }
         } 
         &:nth-child(n + 2){
          margin-top: 0;
