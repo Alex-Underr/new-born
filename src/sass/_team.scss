@@ -142,8 +142,8 @@
 }
 
 .team-bg {
-  width: 100%;
-  background-position: 50% -392px, 60% 673px;
+  width: 100vh;
+  background-position: 50% -570px, 60% 673px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -169,7 +169,7 @@
   }
    }
     @media screen and (min-width: 1280px) {
-      background-position: 68% -364px, 20% -83px;
+      background-position: 50% 20%, 50% 40%;;
       background-image:url('../images/team/teambg_lg1.png'),
       url('../images/team/teambg_lg2.png');
 @media (min-device-pixel-ratio: 2),
