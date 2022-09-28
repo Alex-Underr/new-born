@@ -34,7 +34,7 @@
     background-position: 50% 40px;
     @media screen and (min-width: 768px) {
         margin: 0 auto;
-        width: 768px;
+        max-width: 100%;
         background-image: url("../images/features/group_tab.png");
         @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
             background-image: url("../images/features/group_tab@2x.png");
@@ -113,13 +113,11 @@
            }
            &:nth-child(even){
                 margin-top: -168px;
-                padding-right: 90px;
            }
         } 
         &:nth-child(n + 2){
          margin-top: 0;
          margin-left: auto; 
-         padding-right: 90px; 
         }
         &:nth-child(2){
             margin-top: -839px;

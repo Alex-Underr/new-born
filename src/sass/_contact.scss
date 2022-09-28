@@ -124,7 +124,7 @@
   &:valid {
     border: 1px solid black;
   }
-  &:invalid {
+  &:not(:placeholder-shown):required:invalid {
     border: 2px solid red;
   }
 }
