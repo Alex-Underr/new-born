@@ -1,3 +1,13 @@
+.features{
+    margin: 0 auto;
+    max-width: 468px;
+    @media screen and(min-width:768px){
+      max-width: 768px;
+    } 
+    @media screen and(min-width:1280px){
+      max-width: 100%;
+    } 
+}
 .features__gradient{
     max-width: 100%;
     padding-top: 40px;
@@ -108,7 +118,7 @@
         } 
         &:nth-child(n + 7){
            &:nth-child(odd){
-                margin-left: -342px;
+                margin-left: -372px;
                 padding-bottom: -168px;
            }
            &:nth-child(even){
