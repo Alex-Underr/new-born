@@ -321,3 +321,9 @@
     font-size: 16px;
     line-height: 1.19;
 }
+
+.download__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
